@@ -30,6 +30,14 @@ let newFavFood = 'tortillas';
 myFavFoods.push(newFavFood);
 foodElement.innerHTML += `<br>${newFavFood}`;
 
+/*Removing first element*/
+myFavFoods.shift();
+foodElement.innerHTML += `<br>First element removed: ${myFavFoods.join('<br>')}`;
+
+/*Removing last element*/
+myFavFoods.pop();
+foodElement.innerHTML += `<br>First element removed: ${myFavFoods.join('<br>')}`;
+
 
 
 
