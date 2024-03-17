@@ -79,7 +79,7 @@ let sumOfArray = numbersArray.reduce((sum, number) => sum + number, 0);
 document.getElementById('sumOfArray').textContent = sumOfArray;
 /* Output Multiplied by 2 Array */
 let doubledNumbers = numbersArray.map(number => number * 2);
-document.getElementById('multiplied').textContent = multipliedArray.join(', ');
+document.getElementById('multiplied').textContent = doubledNumbers.join(', ');
 /* Output Sum of Multiplied by 2 Array */
 let sumOfDoubledNumbers = doubledNumbers.reduce((sum, number) => sum + number, 0);
 document.getElementById('sumOfMultiplied').textContent = sumOfDoubledNumbers;
