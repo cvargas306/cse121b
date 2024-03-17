@@ -38,7 +38,7 @@ const multiplyNumbers = () => {
     document.querySelector('#product').value = multiply(factor1, factor2);
 };
 
-document.getElementById('#multiplytNumbers').addEventListener('click', multiplyNumbers);
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
 function divide(dividend, divisor){
