@@ -13,6 +13,7 @@ let profilePicture = 'images/carlos_photo.jpg';
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
+const imageElement = document.querySelector('img');
 
 
 /* Step 4 - Adding Content */
@@ -24,19 +25,23 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 
-let myFavFoods = ['pizza', 'sushi', 'pasta', 'cheescake'];
-foodElement.innerHTML = myFavFoods.join('<br>');
+let myFavFoods = ['pizza', 'sushi', 'pasta', 'cheescake', 'beef'];
+foodElement.innerHTML = myFavFoods.join(', ');
+
 let newFavFood = 'tortillas';
 myFavFoods.push(newFavFood);
-foodElement.innerHTML += `<br>${newFavFood}`;
+foodElement.innerHTML += `<br>${myFavFoods.join(', ')}`;
 
 /*Removing first element*/
 myFavFoods.shift();
-foodElement.innerHTML += `<br>First element removed: ${myFavFoods.join('<br>')}`;
+foodElement.innerHTML += `<br> ${myFavFoods.join(', ')}`;
 
 /*Removing last element*/
 myFavFoods.pop();
-foodElement.innerHTML += `<br>First element removed: ${myFavFoods.join('<br>')}`;
+foodElement.innerHTML += `<br> ${myFavFoods.join(', ')}`;
+
+
+
 
 
 
