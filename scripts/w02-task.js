@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = 'Carlos Vargas';
 let currentYear = '2024';
-let profilePicture = 'images/carlos_photo.jpg';
+let profilePicture = 'images/carlos_picture.jpg';
 
 
 /* Step 3 - Element Variables */
